@@ -1,0 +1,11 @@
+project_id: "terraform-demo-475117"
+region: "us-central1"
+
+gcs_bucket:
+  name: "nishchya-yaml-prod-bucket-001"  # must be globally unique
+  location: "US"
+  versioning: true
+  labels:
+    environment: "prod"
+    owner: "nishchya"
+    managed_by: "terraform"
