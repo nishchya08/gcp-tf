@@ -14,7 +14,7 @@ resource "google_storage_bucket" "this" {
   uniform_bucket_level_access = true
   labels = merge(
     var.labels,
-    { module_version = "v1.1.0" }  # new behavior for v1.1.0
+    { module_version = "v1_1_0" }  # 🔁 underscore, not dots
   )
 }
 
