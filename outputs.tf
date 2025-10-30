@@ -1,4 +1,4 @@
-output "bucket_url" {
-  value = module.my_gcs_bucket.bucket_url
+output "name" {
+  value = google_storage_bucket.this.name
 }
 

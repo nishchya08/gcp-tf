@@ -1,15 +1,18 @@
-variable "region" {
-  type    = string
-  default = "us-central1"
-}
-
 variable "project_id" {
-  type        = string
-  description = "Your GCP Project ID"
+  type = string
 }
 
-variable "bucket_base" {
-  type        = string
-  default     = "nishchya-ws-demo"
-  description = "Base name for GCS buckets"
+variable "name" {
+  type = string
 }
+
+variable "location" {
+  type    = string
+  default = "US"
+}
+
+variable "labels" {
+  type    = map(string)
+  default = {}
+}
+
